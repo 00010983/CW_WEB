@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyage</title>
+  <link rel="stylesheet" href="CSS/styleMain.css"> </head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Voyage</div>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li></li>
+        <button data-login-target="#login">LogIn</button>
+        </li>
+        <li><a href="#">Currency</a></li>
+      </ul>
+    </nav>
+    <section class="find_ticket">
+      <div class="find_tickets_section">
+        <div class="page_one_text">
+          <h1>Search for cheap flights</h1>
+          <h3>The best way to buy cheap flights</h3> </div>
+        <div class="inputs_tickets">
+          <input type="text" placeholder="From" id="cityOne">
+          <button class="replace" id="replaceCities"><-></button>
+          <input type="text" placeholder="To" id="cityTwo">
+          <input type="date" placeholder="From">
+          <input type="date" placeholder="To">
+          <div class="dropdown">
+            <div class="passenger_count">
+              <p id="passenger_count">1 Passenger</p>
+              <p id="class_selection">Economy</p>
+            </div>
+            <div class="dropdown-content">
+              <div class="adults">
+                <div class="dropdown_adults">
+                  <p>Adults</p>
+                  <p>Older than 12 years</p>
+                </div>
+                <div class="adults_quantity">
+                  <div class="wrapper">
+                    <div class="minus" id="minusAdults">-</div>
+                    <div class="num" id="numAdults">1</div>
+                    <div class="plus" id="plusAdults">+</div>
+                  </div>
+                </div>
+              </div>
+              <div class="children">
+                <div class="dropdown_children">
+                  <p>Children</p>
+                  <p>From 2 to 12 years</p>
+                </div>
+                <div class="children_quantity">
+                  <div class="wrapper">
+                    <div class="minus" id="minusChildren">-</div>
+                    <div class="num" id="numChildren">0</div>
+                    <div class="plus" id="plusChildren">+</div>
+                  </div>
+                </div>
+              </div>
+              <div class="infants">
+                <div class="dropdown_infants">
+                  <p>Infants</p>
+                  <p>To 2 years, without seat</p>
+                </div>
+                <div class="infants_quantity">
+                  <div class="wrapper">
+                    <div class="minus" id="minusInfants">-</div>
+                    <div class="num" id="numInfants">0</div>
+                    <div class="plus" id="plusInfants">+</div>
+                  </div>
+                </div>
+              </div>
+              <form name="radio_ticket_class">
+                <lable><input type="radio" name="class" value="Economy"/>Economy</lable>
+                <lable></lable><input type="radio" name="class" value="Comfort"/>Comfort</lable>
+                <lable></lable><input type="radio" name="class" value="Business"/>Business</lable>
+                <lable></lable><input type="radio" name="class" value="First"/>First</lable>
+              </form>
+            </div>
+          </div>
+          <button class="btn_find"><a href="notFound.html">Find</a></button>
+        </div>
+      </div>
+    </section>
+    <div id="login" class="login">
+      <div class="login_lower">
+        <div class="login_header">
+          <h2>LogIn to Your Account</h2>
+          <p>Choose from over 100,000 routes
+            with new tours published every
+            second week</p>
+        </div>
+        <div class="login_body">
+          <div class="login_left">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Login to Your Account</button>
+          </div>
+          <div>
+            <p>/</p>
+          </div>
+          <div class="login_right">
+            <div class="login_block"> <img src="images/appleLogo.png">
+              <p>Sign in with Apple</p>
+            </div>
+            <div class="login_block"> <img src="images/facebookLogo.png">
+              <p>Sign in with Facebook</p>
+            </div>
+            <div class="login_block"> <img src="images/googleLogo.png">
+              <p>Sign in with Google</p>
+            </div>
+          </div>
+        </div>
+        <div class="forget_password"> <a href="#">Forgot Password?</a>          </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </header>
+
+  <section class="list_tours">
+
+    <div class="body">
+      <div class="container">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="button">
+          <label for="one" class= "active one"><</label>
+        </div>
+        <div class="main-card">
+          <div class="cards">
+            
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                
+               </div>
+               <div class="details">
+    
+               </div>
+    
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                
+               </div>
+               <div class="details">
+    
+               </div>
+    
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                
+               </div>
+               <div class="details">
+    
+               </div>
+    
+             </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 
+               </div>
+               <div class="details">
+    
+               </div>
+    
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 
+               </div>
+               <div class="details">
+    
+               </div>
+    
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 
+               </div>
+               <div class="details">
+    
+               </div>
+    
+             </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="button">
+          <label for="two" class= "two">></label>
+        </div>
+      </div>
+    </div>
+    
+
+
+  </section>
+
+  <section class="client_comments">
+    <div class="slider">
+        <button onclick="moveLeft()">&lt;</button>
+        <ul id="list">
+          <li>
+            <div class="li li1">
+              <div class="text_comment">Bye</div>
+              <div class="img_comment"></div>
+            </div>
+          </li>          
+          <li>
+            <div class="li li2">
+              <div class="text_comment">Hello</div>
+              <div class="img_comment"></div>
+            </div>
+          </li>
+          <li>
+            <div class="li li3">
+              <div class="text_comment">Sheesh</div>
+              <div class="img_comment"></div>
+            </div>
+          </li>
+        </ul>
+        <button onclick="moveRight()">&gt;</button>
+      </div>
+  </section>
+
+  <div class="faq">
+    <div class="accordion">
+      <div class="accordion_text">
+        <div class="faq_title">
+        <div class="title">Frequently asked questions</div>
+        </div>
+        <ul class="faq_text">
+          <li>
+            <div class="question_box">
+                <div class="question">What is Voyage?</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe unde incidunt similique aspernatur iure quas! Reiciendis suscipit qui eius quidem, numquam commodi nobis officia officiis hic. Quo, aliquid officia.
+            Dolore, magnam. Reprehenderit labore, aliquid sunt iure quaerat vero ab aut excepturi omnis id molestias consectetur. Temporibus dignissimos consectetur perspiciatis, natus, quae doloribus optio quidem commodi, impedit eaque accusantium labore.</p>
+          </li>
+          <li>
+            <div class="question_box"> 
+              <div class="question">What is provided by Voyage?</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe unde incidunt similique aspernatur iure quas! Reiciendis suscipit qui eius quidem, numquam commodi nobis officia officiis hic. Quo, aliquid officia.
+            Dolore, magnam. Reprehenderit labore, aliquid sunt iure quaerat vero ab aut excepturi omnis id molestias consectetur. Temporibus dignissimos consectetur perspiciatis, natus, quae doloribus optio quidem commodi, impedit eaque accusantium labore.</p>
+          </li>
+          <li>
+            <div class="question_box"> 
+              <div class="question">Where can I buy tickets?</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe unde incidunt similique aspernatur iure quas! Reiciendis suscipit qui eius quidem, numquam commodi nobis officia officiis hic. Quo, aliquid officia.
+            Dolore, magnam. Reprehenderit labore, aliquid sunt iure quaerat vero ab aut excepturi omnis id molestias consectetur. Temporibus dignissimos consectetur perspiciatis, natus, quae doloribus optio quidem commodi, impedit eaque accusantium labore.</p>
+          </li>
+          <li>
+            <div class="question_box"> 
+              <div class="question">Which tours are right for me?</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe unde incidunt similique aspernatur iure quas! Reiciendis suscipit qui eius quidem, numquam commodi nobis officia officiis hic. Quo, aliquid officia.
+            Dolore, magnam. Reprehenderit labore, aliquid sunt iure quaerat vero ab aut excepturi omnis id molestias consectetur. Temporibus dignissimos consectetur perspiciatis, natus, quae doloribus optio quidem commodi, impedit eaque accusantium labore.</p>
+          </li>
+          <li>
+            <div class="question_box"> 
+              <div class="question">How do I cancel?</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe unde incidunt similique aspernatur iure quas! Reiciendis suscipit qui eius quidem, numquam commodi nobis officia officiis hic. Quo, aliquid officia.
+            Dolore, magnam. Reprehenderit labore, aliquid sunt iure quaerat vero ab aut excepturi omnis id molestias consectetur. Temporibus dignissimos consectetur perspiciatis, natus, quae doloribus optio quidem commodi, impedit eaque accusantium labore.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <div class="footer_left">
+        <div class="footer_left_text">
+        <h2>Say Yes for New ADVENTURES!</h2>
+        <div class="footer_input">
+          <textarea name="comments" rows="4" cols="50"></textarea>
+          <input type="email" placeholder="Email">
+          <button>Submit</button>
+        </div>
+        </div>
+        <div class="footer_left_text">
+          <h3>Follow Us</h3>
+          <div class="footer_imgs">
+          <img src="images/facebookLogo.png">
+         <img src="images/instagramLogo.png">
+         <img src="images/youtubeLogo.png">
+         <img src="images/telegramLogo.png">
+        </div>
+        </div>
+       <div class="footer_left_text">
+         <div class="footer_imgs">
+          <img src="images/visa.png">
+          <img src="images/mastercard.png">
+          <img src="images/paypal.png">
+        </div>
+          <p>Copyrigth 2021 Voyage</p>
+          <p>Website by big Voyage + little Voyage</p>
+        </div>
+      </div>
+      <div class="footer_right">
+        <div class="footer_right_text">
+          <h3>Services</h3>
+          <p>tours</p>
+          <p>avia tickets</p>
+          <p>hotel booking</p>
+        </div>
+        <div class="footer_right_text">
+          <h3>Company</h3>
+          <p>who we are</p>
+        </div>
+        <div class="footer_right_text">
+          <h3>Contact</h3>
+          <p>info@voyage.com</p>
+          <p>+ xxx xxx xx xx</p>
+        </div>
+        <div class="footer_right_text">
+          <h3>Help</h3>
+          <p>term & conditions</p>
+          <p>privacy policy</p>
+          <p>cookies</p>
+          <p>payment methods</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+
+</html>
