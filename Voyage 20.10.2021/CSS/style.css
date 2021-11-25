@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    outline: 2px red solid;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    height: 100vh;
+    background-color: burlywood;
+    position: relative;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul > li {
+    display: inline;
+}
+
+button, a {
+    all: unset;
+}
+
+nav > ul > li > a, button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+
+.find_ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    height: inherit;
+    margin: auto;
+} 
+
+.find_tickets_section {
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.replace {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    left: 34.6%;
+}
+
+.btn_find {
+    margin-left: 10px;
+    padding: 5px 12px;
+}
+
+.page_one_text > h1 {
+    font-size: 3.2rem;
+    margin-bottom: 5px;
+}
+
+.page_one_text > h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.adults, .children, .infants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.children_quantity, .adults_quantity, .infants_quantity {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio_ticket_class {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list_tours {
+    position: relative;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right {
+    position: absolute;
+    left: 150%;
+    transition: .5s;
+}
+
+.list_tours > .left {
+    display: flex;
+}
+
+.list_tours > .right {
+    display: flex;
+    left: 100vh;
+}
+
+.tour_blocks {
+    width: 225px;
+    background-color: black;
+    height: 425px;
+}
+
+.list_tour_button_right {
+    left: 95%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.list_tour_button_left {
+    right: 95%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.client_comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(238, 255, 0);
+}
+
+.client_comments > div {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.client_img {
+    left: 300px;
+    position: absolute;
+    height: 450px;
+    width: 335px;
+    background-color: rgb(204, 188, 146);
+}
+
+.comment {
+    position: absolute;
+    height: 325px;
+    width: 450px;
+    background-color: beige;
+}
+
+.partners {
+    height: 100vh;
+    background-color: rgb(255, 0, 149);
+}
+
+.partners > div {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partners > div > div {
+    margin-top: 50px;
+    width: 325px;
+    height: 250px;
+    background-color: black;
+}
+
+
+
+footer {
+    height: 100vh;
+    background-color: rgb(238, 255, 0);
+}
+
+footer > div {
+    width: 70%;
+    margin: auto;
+}
+
+.footer_line {
+    border-bottom: 2px solid green;
+    height: 2px;
+    width: auto;
+}
+
+.footer_lists {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+
+.q_and_a {
+width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+.accordion{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.accordion .accordion-text{
+    width: 60%;
+}
+.accordion .accordion-text .title{
+  font-size: 35px;
+  font-weight: 600;
+  color: #7d2ae8;
+}
+.accordion .accordion-text .faq-text{
+  margin-top: 25px;
+  height: 263px;
+  overflow-y: auto;
+}
+
+.accordion .accordion-text li{
+  list-style: none;
+  cursor: pointer;
+}
+
+.accordion-text li p{
+  width: 92%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #595959;
+  display: none;
+}
+.accordion-text li.showAnswer p{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: green;
+    width: 55%;
+    height: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.login_header {
+    pad: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.login_header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.login_header .close_button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.login_body {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.login_block {
+    display: flex;
+    border: 2px solid black;
+    padding: 7px 50px 7px 25px;
+    border-radius: 2px;
+}
+
+.login_block > img {
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.login_block > p {
+    font-size: 1.5rem;
+}
+
+.login_lower {
+    width: 80%;
+    height: 80%;
+}
+
+.login_left {
+    display: flex;
+    flex-direction: column;
+}

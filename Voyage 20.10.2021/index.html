@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyage</title>
+  <link rel="stylesheet" href="CSS/style.css"> </head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Voyage</div>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li></li>
+        <button data-login-target="#login">Profile</button>
+        </li>
+        <li><a href="#">Currency</a></li>
+      </ul>
+    </nav>
+    <section class="find_ticket">
+      <div class="find_tickets_section">
+        <div class="page_one_text">
+          <h1>Search for cheap flights</h1>
+          <h3>The best way to buy cheap flights</h3> </div>
+        <div class="inputs_tickets">
+          <input type="text" placeholder="From">
+          <button class="replace"><-></button>
+          <input type="text" placeholder="To">
+          <input type="text" placeholder="From">
+          <input type="text" placeholder="To">
+
+          <div class="dropdown">
+            <input type="text" placeholder="Passengers">
+            <div class="dropdown-content">
+
+              <div class="adults">
+                <div class="dropdown_adults">
+                  <p>Adults</p>
+                  <p>Older than 12 years</p>
+                </div>
+                <div class="adults_quantity">
+                  <button>-</button>
+                  <p>1</p>
+                  <button>+</button>
+                </div>
+              </div>
+
+              <div class="children">
+                <div class="dropdown_children">
+                  <p>Children</p>
+                  <p>From 2 to 12 years</p>
+                </div>
+                <div class="children_quantity">
+                  <button>-</button>
+                  <p>0</p>
+                  <button>+</button>
+                </div>
+              </div>
+
+              <div class="infants">
+                <div class="dropdown_infants">
+                  <p>Infants</p>
+                  <p>To 2 years, without seat</p>
+                </div>
+                <div class="infants_quantity">
+                  <button>-</button>
+                  <p>0</p>
+                  <button>+</button>
+                </div>
+              </div>
+              <div class="radio_ticket_class">
+                <label>
+                  <input type="radio">Economy
+                </label>
+                <label>
+                  <input type="radio">Comfort
+                </label>
+                <label>
+                  <input type="radio">Business
+                </label>
+                <label>
+                  <input type="radio">First
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <button class="btn_find">Find</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="login" class="login">
+      <div class="login_lower">
+      <div class="login_header">
+        <div class="title">LogIn to Your Account</div>
+        <button data-close-button class="close_button">&times;</button>
+      </div>
+      <div class="login_body">
+        <div class="login_left">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <button>Login to Your Account</button>
+        </div>
+        <div>
+          <p>/</p>
+        </div>
+        <div class="login_right">
+          <div class="login_block">
+            <img src="images/appleLogo.png">
+            <p>Sign in with Apple</p>
+          </div>
+          <div class="login_block">
+            <img src="images/facebookLogo.png">
+            <p>Sign in with Facebook</p>
+          </div>
+          <div class="login_block">
+            <img src="images/googleLogo.png">
+            <p>Sign in with Google</p>
+          </div>
+        </div>
+      </div>
+      <p><a href="#"></a>Forgot Password?</p>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </header>
+
+  <section class="list_tours">
+    <button class="list_tour_button_left">
+      <</button>
+        <div class="left" id="left">
+          <div class="tour_blocks"></div>
+          <div class="tour_blocks"></div>
+          <div class="tour_blocks"></div>
+          <div class="tour_blocks"></div>
+        </div>
+        <div class="right" id="right">
+          <div class="tour_blocks"></div>
+          <div class="tour_blocks"></div>
+          <div class="tour_blocks"></div>
+          <div class="tour_blocks"></div>
+        </div>
+        <button class="list_tour_button_right">></button>
+  </section>
+  <section class="client_comments">
+    <button class="list_tour_button_left">
+      <</button>
+        <div>
+          <div class="comment"></div>
+          <div class="client_img"></div>
+        </div>
+        <button class="list_tour_button_right">></button>
+  </section>
+  <section class="partners">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+  <div class="q_and_a">
+    <div class="accordion">
+      <div class="accordion-text">
+        <div class="title">Frequently asked questions</div>
+        <ul class="faq-text">
+          <li>
+            <div class="question-arrow"> <span class="question">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>              </div>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Nostrum,
+              doloribus.</p>
+          </li>
+          <li>
+            <div class="question-arrow"> <span class="question">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>              </div>
+            <p>JavaScript is a text-based programming
+              language used both on the client-side
+              and server-side that allows
+              you to make web pages interactive</p>
+          </li>
+          <li>
+            <div class="question-arrow"> <span class="question">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>              </div>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Non, necessitatibus.</p>
+          </li>
+          <li>
+            <div class="question-arrow"> <span class="question">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>              </div>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Rerum, labore.</p>
+          </li>
+          <li>
+            <div class="question-arrow"> <span class="question">Software you use for video editing?</span>              </div>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Saepe, repudiandae!</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <h2>Let's Contact</h2>
+      <div class="footer_line"></div>
+      <div class="footer_lists">
+        <div>
+          <h3>Socials</h3>
+          <div>Instagram</div>
+          <div>Youtube</div>
+          <div>Twitter</div>
+          <div>Facebook</div>
+          <div>Telegram</div>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <div>81 Nukus Street, Tashkent</div>
+        </div>
+        <div>
+          <h3>Say Hi!</h3>
+          <div>voyage@info.com</div>
+        </div>
+      </div>
+      <div class="footer_line"></div>
+      <div>Voyage Agency &#169 2021</div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
