@@ -10,7 +10,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 body {
@@ -1020,7 +1020,6 @@ textarea:focus-visible {
 	flex-wrap: wrap;
 }
 
-
 .receive_newsletter_right>div>input {
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -1095,7 +1094,7 @@ textarea:focus-visible {
 
 .submit_y>h3 {
 	text-align: center;
-	font-size: 3rem;	
+	font-size: 3rem;
 }
 
 .submit_y>p {
@@ -1285,12 +1284,13 @@ textarea:focus-visible {
 	font-size: 2rem;
 	font-weight: bold;
 	padding: 8px 15px;
-	text-align:center;
+	text-align: center;
 	transition-duration: .3s;
 	transition-property: all;
-	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
-.button:hover{
+
+.button:hover {
 	color: #000;
 	background: rgb(255, 182, 87);
 }
@@ -1494,22 +1494,10 @@ textarea:focus-visible {
 	font-size: 1.5rem;
 }
 
-
-#text1, #text2 {
+#text1,
+#text2 {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .tour_section {
 	display: flex;
@@ -1735,10 +1723,9 @@ textarea:focus-visible {
 	.card:nth-child(1) {
 		display: none;
 	}
-
 	.background_main {
 		height: 1000vh;
-	}	
+	}
 }
 
 @media (min-width: 1401px) and (max-width: 1600px) {
@@ -1752,19 +1739,15 @@ textarea:focus-visible {
 	.btn_find>a {
 		padding: 20px 35px;
 	}
-
 	.footer_right {
 		width: 40%;
 	}
-
-
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
 	* {
 		font-size: 9px;
 	}
-
 	.rainbow_section {
 		height: 65px;
 	}
@@ -1811,19 +1794,16 @@ textarea:focus-visible {
 		width: 250px;
 		height: 400px;
 	}
-
 	.next {
 		right: 2%;
 		width: 50px;
 		height: 50px;
 	}
-	
 	.prev {
 		left: 2%;
 		width: 50px;
 		height: 50px;
 	}
-
 	.text_tour_list {
 		position: absolute;
 		bottom: 25%;
@@ -1843,11 +1823,9 @@ textarea:focus-visible {
 	.footer_left_text>h2 {
 		margin-bottom: 10px;
 	}
-
 	.footer_right {
 		width: 45%;
 	}
-
 	textarea {
 		width: 450px;
 		height: 200px;
@@ -1861,7 +1839,6 @@ textarea:focus-visible {
 	.background_main {
 		height: 750vh;
 	}
-
 	* {
 		font-size: 7px;
 	}
@@ -1924,19 +1901,16 @@ textarea:focus-visible {
 		width: 220px;
 		height: 400px;
 	}
-
 	.next {
 		right: 1.5%;
 		width: 47px;
 		height: 47px;
 	}
-	
 	.prev {
 		left: 1.5%;
 		width: 47px;
 		height: 47px;
 	}
-
 	.text_tour_list {
 		position: absolute;
 		bottom: 25%;
@@ -1991,7 +1965,6 @@ textarea:focus-visible {
 		width: 375px;
 		height: 175px;
 	}
-
 	.footer_right {
 		width: 50%;
 	}
@@ -2001,7 +1974,6 @@ textarea:focus-visible {
 	.background_main {
 		height: 720vh;
 	}
-
 	.rainbow_section {
 		height: 61px;
 	}
@@ -2089,19 +2061,16 @@ textarea:focus-visible {
 		width: 200px;
 		height: 325px;
 	}
-
 	.next {
 		right: 1.5%;
 		width: 47px;
 		height: 47px;
 	}
-	
 	.prev {
 		left: 1.5%;
 		width: 47px;
 		height: 47px;
 	}
-
 	.text_tour_list {
 		position: absolute;
 		bottom: 25%;
@@ -2121,17 +2090,14 @@ textarea:focus-visible {
 	.footer_left_text>h2 {
 		font-size: 2.5rem;
 	}
-
 	.footer_right_text_hide {
 		display: none;
 	}
-
 	.footer_right {
 		display: flex;
 		flex-direction: column;
 		width: 30%;
 	}
-
 	.accardion {
 		width: 60%;
 	}
@@ -2147,12 +2113,10 @@ textarea:focus-visible {
 	.footer_right {
 		width: 50%;
 	}
-
 	.footer_right_text {
 		width: 180px;
 		height: 200px;
 	}
-
 	textarea {
 		width: 265px;
 		height: 135px;
@@ -2168,7 +2132,6 @@ textarea:focus-visible {
 	.background_main {
 		height: 720vh;
 	}
-
 	.card:nth-child(1),
 	.card:nth-child(2) {
 		display: none;
@@ -2216,12 +2179,10 @@ textarea:focus-visible {
 		background-color: grey;
 		border-radius: 50%;
 	}
-
 	.footer_right_text {
 		width: 150px;
 		height: 200px;
 	}
-
 	.footer_right {
 		display: flex;
 		flex-direction: column;
@@ -2233,7 +2194,6 @@ textarea:focus-visible {
 	.background_main {
 		height: 800vh;
 	}
-
 	.rainbow_section {
 		height: 60px;
 	}
@@ -2243,18 +2203,15 @@ textarea:focus-visible {
 	.login_header>p {
 		display: none;
 	}
-
 	.login_header>h2 {
 		font-size: 3rem;
 	}
-
 	.login_body {
 		justify-content: center;
 	}
-
 	.splitter {
 		display: none;
-	} 
+	}
 	.dropdown-content {
 		position: absolute;
 		top: -350%;
@@ -2294,19 +2251,16 @@ textarea:focus-visible {
 		background-color: grey;
 		border-radius: 50%;
 	}
-
 	.next {
 		right: 1.5%;
 		width: 43px;
 		height: 43px;
 	}
-	
 	.prev {
 		left: 1.5%;
 		width: 43px;
 		height: 43px;
 	}
-
 	.best_main_img {
 		display: none;
 	}
@@ -2358,7 +2312,6 @@ textarea:focus-visible {
 	.hide_tours_three {
 		display: none;
 	}
-
 	.input_email {
 		width: 200px;
 	}
@@ -2385,7 +2338,6 @@ textarea:focus-visible {
 	.best_block_first {
 		width: 100%;
 	}
-
 	.footer_right_text {
 		width: 150px;
 		height: 200px;
@@ -2395,24 +2347,20 @@ textarea:focus-visible {
 @media (min-width: 400px) and (max-width: 600px) {
 	.background_main {
 		height: 800vh;
-	}	
-
+	}
 	.card:nth-child(1),
 	.card:nth-child(2) {
 		display: none;
 	}
-
 	.login_right {
 		display: none;
 	}
 	.login_header>p {
 		display: none;
 	}
-
 	.splitter {
 		display: none;
 	}
-
 	.card_background {
 		width: 115px;
 		height: 195px;
@@ -2433,17 +2381,14 @@ textarea:focus-visible {
 	.best_block_first {
 		width: 100%;
 	}
-
 	.login_header>h2 {
 		font-size: 3rem;
 	}
-
 	.button {
 		margin-top: 10px;
 		height: 40px;
 		width: 100px;
 	}
-
 	.input_email {
 		width: 150px;
 	}
@@ -2452,27 +2397,22 @@ textarea:focus-visible {
 @media (min-width: 281px) and (max-width: 399px) {
 	.background_main {
 		height: 1100vh;
-	}	
-
+	}
 	.rainbow_section {
 		height: 59px;
 	}
-
 	.login_header>h2 {
 		font-size: 3rem;
 	}
-
 	.login_right {
 		display: none;
 	}
 	.login_header>p {
 		display: none;
 	}
-
 	.splitter {
 		display: none;
 	}
-
 	.dropdown-content {
 		position: absolute;
 		top: -350%;
@@ -2584,7 +2524,6 @@ textarea:focus-visible {
 	.card:nth-child(2) {
 		display: none;
 	}
-
 	.button {
 		margin-top: 10px;
 		height: 40px;
@@ -2599,18 +2538,15 @@ textarea:focus-visible {
 		left: 10%;
 		box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
 	}
-
 	.login_right {
 		display: none;
 	}
 	.login_header>p {
 		display: none;
 	}
-
 	.splitter {
 		display: none;
 	}
-
 	.exit_passenger_counter {
 		display: flex;
 		justify-content: flex-end;
@@ -2693,5 +2629,6 @@ textarea:focus-visible {
 		flex-direction: column;
 	}
 }
+
 
 /* -------------- Thanks for visiting ------------------*/
