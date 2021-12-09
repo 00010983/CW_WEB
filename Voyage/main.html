@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voyage</title>
+	<link rel="stylesheet" href="CSS/styleMain.css"> </head>
+
+<body>
+	<div class="background_main">
+		<div class="background_main_limit">
+			<div class="rainbow"></div>
+			<div class="rainbow"></div>
+			<div class="rainbow"></div>
+			<div class="rainbow"></div>
+			<div class="rainbow"></div>
+			<div class="rainbow"></div>
+		</div>
+	</div>
+	<div class="rainbow_effect">
+		<header>
+			<div class="rainbow_section">
+				<div class="rainbow_border_effect"></div>
+				<nav>
+					<div> <a href="#" class="logo">Voyage</a>
+						<div class="nav_right"> <a href="#faq" id="about_link_btn">About</a> <a data-login-target="#login">Login</a> </div>
+					</div>
+				</nav>
+			</div>
+			<section class="find_ticket" id="find_ticket">
+				<div class="find_tickets_section">
+					<div class="page_one_text">
+						<h1>Search for cheap flights</h1>
+						<h3>The best way to buy cheap flights</h3> </div>
+					<div class="inputs_tickets">
+						<div class="input_first_two_replace">
+							<input type="text" placeholder="From" id="cityOne" class="from_place">
+							<button class="replace" id="replaceCities"><-></button>
+							<input type="text" placeholder="To" id="cityTwo" class="to_place">
+						</div>
+						<div class="input_first_two">
+							<input type="date" placeholder="From" min="2021-12-01" max="2022-12-31" name="trip-start" class="date from_date">
+							<input type="date" placeholder="To" min="2021-12-01" max="2022-12-31" name="trip-end" class="date to_date"> </div>
+						<div class="input_first_two">
+							<div class="dropdown">
+								<div class="passenger_count" id="toggle_count">
+									<div>
+										<p id="passenger_count">1 passenger<span>s</span></p>
+										<p id="class_selection">Economy</p>
+									</div>
+									<div class="toggle_passenger_class" id="toggle_passenger_class">></div>
+								</div>
+								<div class="dropdown-content" id="dropdown_content">
+									<div class="exit_passenger_counter">
+										<div id="toggle_count_x">✕</div>
+									</div>
+									<div class="adults">
+										<div class="dropdown_adults">
+											<p>Adults</p>
+											<p>Older than 12 years</p>
+										</div>
+										<div class="adults_quantity">
+											<div class="wrapper">
+												<div class="minus" id="minusAdults">-</div>
+												<div class="num" id="numAdults">1</div>
+												<div class="plus" id="plusAdults">+</div>
+											</div>
+										</div>
+									</div>
+									<div class="children">
+										<div class="dropdown_children">
+											<p>Children</p>
+											<p>From 2 to 12 years</p>
+										</div>
+										<div class="children_quantity">
+											<div class="wrapper">
+												<div class="minus" id="minusChildren">-</div>
+												<div class="num" id="numChildren">0</div>
+												<div class="plus" id="plusChildren">+</div>
+											</div>
+										</div>
+									</div>
+									<div class="infants">
+										<div class="dropdown_infants">
+											<p>Infants</p>
+											<p>To 2 years, without seat</p>
+										</div>
+										<div class="infants_quantity">
+											<div class="wrapper">
+												<div class="minus" id="minusInfants">-</div>
+												<div class="num" id="numInfants">0</div>
+												<div class="plus" id="plusInfants">+</div>
+											</div>
+										</div>
+									</div>
+									<div class="line"></div>
+									<form name="radio_ticket_class" class="choose_class">
+										<lable class="radio_btns">
+											<div>Economy</div>
+											<input type="radio" name="class" value="Economy" checked="checked">
+										</lable>
+										<lable class="radio_btns">
+											<div>Comfort</div>
+											<input type="radio" name="class" value="Comfort"></lable>
+										<lable class="radio_btns">
+											<div>Business</div>
+											<input type="radio" name="class" value="Business"></lable>
+										<lable class="radio_btns">
+											<div>First</div>
+											<input type="radio" name="class" value="First"></lable>
+									</form>
+								</div>
+							</div>
+							<button class="btn_find"><a href="notFound.html">Find Tickets</a></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="login_rainbow_effect">
+				<div class="login_border_effect">
+					<div id="login" class="login">
+						<div class="login_lower">
+							<div class="login_header">
+								<h2>Login to Your Account</h2>
+								<p>Choose from over 100,000 routes with new tours published every second week</p>
+							</div>
+							<div class="login_body">
+								<div class="login_left">
+									<input type="email" placeholder="Email" id="email_one">
+									<label class="email_login" for="email">Email</label>
+									<input type="password" placeholder="Password">
+									<label class="password_login" for="password">Password</label>
+									<button class="button" id="check_email_one">LOGIN</button>
+								</div>
+								<div class="splitter">
+									<p>/</p>
+								</div>
+								<div class="login_right">
+									<div class="login_block_border">
+										<div class="login_block"> <img src="images/appleLogo.png"> <a href="https://appleid.apple.com/">Sign in with Apple</a> </div>
+									</div>
+									<div class="login_block_border">
+										<div class="login_block"> <img src="images/facebookLogo.png"> <a href="https://www.facebook.com/">Sign in with Facebook</a> </div>
+									</div>
+									<div class="login_block_border">
+										<div class="login_block"> <img src="images/googleLogo.png"> <a href="https://myaccount.google.com/">Sign in with Google</a> </div>
+									</div>
+								</div>
+							</div>
+							<div class="forget_password"> <a href="#">Forgot Password?</a></div>
+						</div>
+					</div>
+				</div>
+				<div id="overlay"></div>
+			</section>
+		</header>
+		<div class="tour_section">
+			<h2>Trending</h2>
+			<a href="seeAll.html">See all</a>
+		</div>
+		<section class="tours_list">
+			<div class="container">
+			   <div class="carousel">
+				 <div class="slider">
+				   <section class="tour_list">
+					   <div>
+						   <img src="images/paris.jpg">
+						   <div class="text_tour_list">
+							   <p>Paris</p>
+							   <p class="block"></p>
+							   <p>Teaches the Art of Story Telling</p>
+						   </div>
+						</div>
+					  
+					  <div class="hide_tours_one">
+						<img src="images/new_york.jpg">
+						<div class="text_tour_list">
+							<p>New York</p>
+							<p class="block"></p>
+							<p>Teaches the Art of Story Telling</p>
+						</div></div>
+					 
+					  <div class="hide_tours_two">
+						  <img src="images/seoul.jpg">
+						  <div class="text_tour_list">
+							<p>Seoul</p>
+							<p class="block"></p>
+							<p>Teaches the Art of Story Telling</p>
+						</div>
+						</div>
+					  
+					  <div class="hide_tours_three">
+						  <img src="images/japan.jpg">
+						  <div class="text_tour_list">
+							<p>Tokyo</p>
+							<p class="block"></p>
+							<p>Teaches the Art of Story Telling</p>
+						</div>
+						</div>
+					  
+				   </section>
+				  <section class="tour_list">
+					<div>
+						<img src="images/sweden.jpg">
+						<div class="text_tour_list">
+							<p>Sweden</p>
+							<p class="block"></p>
+							<p>Teaches the Art of Story Telling</p>
+						</div>
+					</div>
+					 
+					 <div class="hide_tours_one">
+						 <img src="images/denmark.jpg">
+						 <div class="text_tour_list">
+							<p>Denmark</p>
+							<p class="block"></p>
+							<p>Teaches the Art of Story Telling</p>
+						</div>
+						</div>
+					 
+					 <div class="hide_tours_two">
+						 <img src="images/norway.jpg">
+						 <div class="text_tour_list">
+							<p>Norway</p>
+							<p class="block"></p>
+							<p>Teaches the Art of Story Telling</p>
+						</div>
+						</div>
+					 
+					 <div class="hide_tours_three">
+						 <img src="images/finland.jpg">
+						 <div class="text_tour_list">
+							<p>Finland</p>
+							<p class="block"></p>
+							<p>Teaches the Art of Story Telling</p>
+						</div>
+						</div>
+					 
+				  </section>
+				 </div>
+				 <div class="controls">
+				   <button class="next">></button>
+				   <button class="prev"><</button>
+				 </div>
+			   </div>
+			 </div>
+		 </section>
+		<section class="best">
+			<h3 class="titling_best">See what our members are saying.</h3>
+			<h3 class="quote quote_one">"When you finally get to set, you’ve
+				done all the work—so the important
+				thing is to relax, be confident, and just
+				try and be as fearless as possible."</h3>
+			<div class="best_block_one">
+				<div class="best_block best_block_first"> 
+					<img class="best_main_img" src="images/natalie_portman.JPG" alt="">
+					<div class="best_review_boxes" id="review1">
+						<div class="img_rating">
+							<img src="images/natalie_portman.JPG" alt="">
+							<p><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></p>
+						</div>
+						<p class="review_date">Natalie Portman, 31/10/2021</p>
+						<h4>Lorem, ipsum dolor.</h4>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis laborum dolor quasi facere voluptate consequuntur nam, eaque cumque dolorum natus, sint debitis magni nihil nisi, neque numquam? Doloribus, sint ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perspiciatis cumque distinctio, nam doloremque ipsam qui explicabo deleniti deserunt inventore debitis ipsa quas officia voluptates dolor ea quidem obcaecati iusto.</p>
+						<div class="review_more" id="review_more1">more</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="quote quote_two">"For me, I'd rather have an intense experience than not."</h3>
+			<div class="best_block_two">
+				<div class="best_block best_block_second">
+					<img class="best_main_img" src="images/joaquin_phoenix.JPG" alt="">
+					<div class="best_review_boxes" id="review2">
+						<div class="img_rating">
+							<img src="images/joaquin_phoenix.JPG" alt="">
+							<p><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span></p>
+						</div>
+						<p class="review_date">Joaquin Phoenix, 10/11/2021</p>
+						<h4>Lorem dolor.</h4>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestias corrupti id totam quidem perferendis quam delectus, minus accusantium, praesentium veritatis. Dolorem necessitatibus nihil reprehenderit est possimus modi unde ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perspiciatis cumque distinctio, nam doloremque ipsam qui explicabo deleniti deserunt inventore debitis ipsa quas officia voluptates dolor ea quidem obcaecati iusto.</p>
+						<div class="review_more" id="review_more2">more</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="quote quote_three">”What’s strange about the way my brain functions is that the only thing that has ever made me feel calm is knowing clearly what I want.”</h3>
+			<div class="best_block_three">
+				<div class="best_block best_block_third">
+					<img class="best_main_img" src="images/emma_stone.jpg" alt="">
+					<div class="best_review_boxes" id="review3">
+						<div class="img_rating">
+							<img src="images/emma_stone.jpg" alt="">
+							<p><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span></p>
+						</div>
+						<p class="review_date">Emma Stone, 15/11/2021</p>
+						<h4>Lorem, ipsu.</h4>
+						<p>Lorem ipsum dolor, sit amet clabconsequuntur nam, eaque cumque dolorum natus, sint debitis magni nihil nisi, neque numquam? Doloribus, sint ea? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eos dignissimos voluptatem sed laudantium. Eveniet, nobis. Veritatis tenetur incidunt modi ratione quasi sequi, officiis soluta obcaecati temporibus, iste aliquid neque.</p>
+						<div class="review_more" id="review_more3">more</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="cards_section_titling">
+			<h2>Explore our library of classes.</h2>
+		</div>
+		<section class="cards_section">
+			<div class="card_grid">
+				<a class="card" href="javascript:void(0);"> <img src="images/winter.jpg" class="card_background" alt="">
+					<div class="card_content">
+						<p class="card_category">Winter</p>
+						<h3 class="card_heading">Discover</h3> </div>
+				</a>
+				<a class="card" href="javascript:void(0);"> <img src="images/autum.jpg" class="card_background" alt="">
+					<div class="card_content">
+						<p class="card_category">Autum</p>
+						<h3 class="card_heading">Discover</h3></div>
+				</a>
+				<a class="card" href="javascript:void(0);"> <img src="images/summer.jpg" class="card_background" alt="">
+					<div class="card_content">
+						<p class="card_category">Summer</p>
+						<h3 class="card_heading">Discover</h3> </div>
+					</li>
+					<a class="card" href="javascript:void(0);"> <img src="images/spring.jpg" class="card_background" alt="">
+						<div class="card_content">
+							<p class="card_category">Spring</p>
+							<h3 class="card_heading">Discover</h3> </div>
+					</a>
+			</div>
+		</section>
+		<div class="faq" id="faq">
+			<div>
+				<div class="newsletter_section" id="receive_top">
+					<div class="receive_newsletter receive_newsletter_left">
+						<h3>Try some of our tours</h3>
+						<p>Enter your email and we’ll send you some samples of our favorite classes.</p>
+					</div>
+					<div class="receive_newsletter_right">
+						<div>
+							<input class="input_email" type="email" placeholder="Email" id="email_two">
+							<button class="button" id="button check_email_two" onclick="changeDisplay()">SUBMIT</button>
+						</div>
+						<label for="checkbox" class="agree_checkbox">
+							<input type="checkbox" id="check">I agree to receive email updates</label>
+					</div>
+				</div>
+				<div class="submit_y submit_n" id="receive_bottom" style="display: none;">
+					<h3>Thanks for signing up!</h3>
+					<p>We’ll let you know about new instructors, tours, and promotions.</p>
+				</div>
+				<h2>Frequently asked questions</h2> </div>
+			<div class="accardion">
+				<h2>Voyage</h2>
+				<div class="accardion-block">
+					<div class="accardion-link active"> <a href="javascript:void(0);" class="accardion_color_one">What is Voyage?</a> </div>
+					<div class="accardion-lists active-block" id="about_link">
+						<p class="accardion_color_one_p">Lorem ipsum dolor, sit amet secteturv adipisicing elit. Facere dignissimos nemo voluptatem porro nisi corrupti error sapiente omnis non eaque iusto, velit ipsum adipisci, cupiditate pariatur quibusdam excepturi vero sed.</p>
+					</div>
+				</div>
+				<div class="accardion-block">
+					<div class="accardion-link"> <a href="javascript:void(0);" class="accardion_color_two">What is provided by Voyage?</a> </div>
+					<div class="accardion-lists">
+						<p class="accardion_color_two_p">Lorem ipsum dolor sit aum dolor sit ameum dolor sit ameum dolor sit amemet consectetur adipisicing elit. Repellendus ipsum asperiores unde id blanditiis quia, odit porro cumque perferendis? Autem pariatur aliquid quia ab doloremque fugiat corporis sit ut totam?</p>
+					</div>
+				</div>
+				<div class="accardion-block">
+					<div class="accardion-link"> <a href="javascript:void(0);" class="accardion_color_three">What is provided by Voyage?</a> </div>
+					<div class="accardion-lists">
+						<p class="accardion_color_three_p">Lorem ipsum dolor sit aum dolor sit ameum dolor sit ameum dolor sit amemet consectetur adipisicing elit. Repellendus ipsum asperiores unde id blanditiis quia, odit porro cumque perferendis? Autem pariatur aliquid quia ab doloremque fugiat corporis sit ut totam?</p>
+					</div>
+				</div>
+				<h2>Price & Payment</h2>
+				<div class="accardion-block">
+					<div class="accardion-link"> <a href="javascript:void(0);" class="accardion_color_four">How do I cancel?</a> </div>
+					<div class="accardion-lists">
+						<p class="accardion_color_four_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum asperiores unde id blanditiis quia, odit porro cumque perferendis? Autem pariatur aliquid quia ab doloremque fugiat corporis sit ut totam?</p>
+					</div>
+				</div>
+				<div class="accardion-block">
+					<div class="accardion-link"> <a href="javascript:void(0);" class="accardion_color_five">Where can I buy tickets?</a> </div>
+					<div class="accardion-lists">
+						<p class="accardion_color_five_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum asperiores unde id blanditiis quia, odit porro cumque perferendis? Autem pariatur aliquid quia ab doloremque fugiat corporis sit ut totam?</p>
+					</div>
+				</div>
+				<div class="accardion-block">
+					<div class="accardion-link"> <a href="javascript:void(0);" class="accardion_color_six">What is provided by Voyage?</a> </div>
+					<div class="accardion-lists">
+						<p class="accardion_color_six_p">Lorem ipsum dolor sit aum dolor sit ameum dolor sit ameum dolor sit amemet consectetur adipisicing elit. Repellendus ipsum asperiores unde id blanditiis quia, odit porro cumque perferendis? Autem pariatur aliquid quia ab doloremque fugiat corporis sit ut totam?</p>
+					</div>
+				</div>
+				<div class="accardion-block accardion-last-block">
+					<div class="accardion-link"> <a href="javascript:void(0);" class="accardion_color_seven">Which tours are right for me?</a> </div>
+					<div class="accardion-lists">
+						<p class="accardion_color_seven_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum asperiores unde id blanditiis quia, odit porro cumque perferendis? Autem pariatur aliquid quia ab doloremque fugiat corporis sit ut totam?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<div class="footer_left">
+					<div class="footer_left_text">
+						<h2>Say Yes for New ADVENTURES!</h2>
+						<div class="footer_input">
+							<div class="textarea_block">
+								<textarea name="comments" placeholder="Type Text..." id="word-count-input"></textarea>
+								<div class="counter">
+									<p id="word-count" class="word_count">0
+										<p class="word_count">words
+											<p class="character_count">|</p>
+										</p>
+									</p>
+									<p id="character-count" class="character_count">0</p>
+									<p class="character_count">characters</p>
+								</div>
+							</div>
+							<div class="input_button">
+								<input class="input_email" type="email" placeholder="Email" id="email_three">
+								<button class="button" id="check_email_three">SUBMIT</button>
+							</div>
+						</div>
+					</div>
+					<div class="footer_left_text">
+						<h3>Follow Us</h3>
+						<div class="footer_imgs">
+							<a href="javascript:void(0);"><img src="images/instagramLogo.png"></a>
+							<a href="javascript:void(0);"><img src="images/youtubeLogo.png"></a>
+							<a href="javascript:void(0);"><img src="images/telegramLogo.png"></a>
+						</div>
+					</div>
+					<div class="footer_left_text">
+						<h3>Payment Methods</h3>
+						<div class="footer_imgs">
+							<a href="javascript:void(0);"><img src="images/visa.png"></a>
+							<a href="javascript:void(0);"><img src="images/mastercard.png"></a>
+							<a href="javascript:void(0);"><img src="images/paypal.png"></a>
+						</div>
+						<p>Copyrigth 2021 Voyage</p>
+						<p>Website by BIG VOYAGE + little voyage:)</p>
+					</div>
+				</div>
+				<div class="footer_right">
+					<div>
+						<div class="footer_right_text">
+							<h3>Services</h3> <a href="#carousel">tours</a> <a href="#find_ticket">avia tickets</a> <a href="https://www.booking.com/index.ru.html?label=gen173nr-1BCAEoggI46AdIM1gEaO4BiAEBmAEhuAEXyAEM2AEB6AEBiAIBqAIDuAKQ7piNBsACAdICJDZiMTQ1M2E5LTkxM2UtNGJjMy1iMmY2LWE1NTY0ODExN2E2YtgCBeACAQ;sid=6e9e4283abe446805e195eae5366daa8;keep_landing=1&sb_price_type=total&">hotel booking</a> </div>
+						<div class="footer_right_text footer_right_text_hide">
+							<h3>Company</h3> <a href="#faq" id="about_link_btn_who">who we are</a> </div>
+					</div>
+					<div>
+						<div class="footer_right_text">
+							<h3>Contact</h3> <a href="mailto: info@voyage.com">info@voyage.com</a> <a href="tel:555-666-7777">555-666-7777</a> </div>
+						<div class="footer_right_text footer_right_text_hide">
+							<h3>Help</h3>
+							<a href="#">privacy policy</a>
+							<a href="#">payment methods</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="auto_slider">
+				<div class="rail">
+					<div><img src="images/korean.png" alt=""></div>
+					<div><img src="images/asiana.png" alt=""></div>
+					<div><img src="images/asialuxe.png" alt=""></div>
+					<div><img src="images/esy.png" alt=""></div>
+					<div><img src="images/turkish.png" alt=""></div>
+				</div>
+			</div>
+			<p class="requirement">“This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service”.</p>
+		</footer>
+		<div id="text1"></div>
+		<div id="text2"></div>
+	</div>
+	<script src="JS/main.js"></script>
+</body>
+
+</html>
